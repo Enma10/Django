@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %} 
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de mi...</h1>
+<span class="subheading">Biografía</span>
+{% endblock %} {% block content %}
+<div class="row">
+  <div class="col-lg-3 col-md-4 offset-lg-1">
+    <img
+      class="img-fluid avatar"
+      src="{% static 'core/img/avatar.jpeg' %}"
+      alt=""
+    />
+  </div>
+  <div class="col-lg-7 col-md-8">
+    <h2 class="section-heading">Rodrigo Bobadilla L.</h2>
+    <p>
+      
+    </p>
+    <p>
+      Soy Tecnico Informatico egresado del Colegio de Educacion Profesional Tecnica del Estado de Mexico, actualmente estudiante de la casa de estudios de la Universidad Tecnologica del Valle de Toluca, aplicando mis conocimientos y reforzando las habilidades adquiridas en mi carrera profesional.
+    </p>
+  </div>
+</div>
+{% endblock %}
